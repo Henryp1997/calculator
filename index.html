@@ -2,10 +2,14 @@
 <html
 <head>
     <link rel="stylesheet" href="./assets/styles.css">
+    <script src="./JS/calculator.js"></script>
 </head>
 <body>
-<div class="screen"></div>
-<div>
+<div class="screen">
+    <textarea readOnly=true id="user_input" class="user_input"></textarea>
+    <textarea readOnly=true id="result" style="margin-left: 294px; margin-top: 22px" class="user_input"></textarea>
+</div>
+<div id="all_buttons">
     <div>
         <button>(</button>
         <button>)</button>
@@ -30,7 +34,7 @@
         <button>6</button>
         <button>-</button>
         <button>x&#178;</button>
-        <button class="odd_button">x<sup>&#696;</sup></button>
+        <button class="odd_button">x<sup>y</sup></button>
         <button>&#8730;</button>
     </div>
     <div>
@@ -41,6 +45,15 @@
         <button>x!</button>
         <button>&#960;</button>
         <button>e</button>
+    </div>
+    <div>
+        <button>0</button>
+        <button>.</button>
+        <button>=</button>
+        <button>*</button>
+        <button>%</button>
+        <button>Inv</button>
+        <button>Ans</button>
     </div>
 </div>
 
